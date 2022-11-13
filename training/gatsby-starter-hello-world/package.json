@@ -6,13 +6,13 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "echo \"\nRunning build script of training/gatsby-starter-hello-world!\n\" && gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "predeploy": "yarn run build",
+    "predeploy": "gatsby build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {

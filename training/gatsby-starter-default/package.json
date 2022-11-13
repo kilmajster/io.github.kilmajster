@@ -23,14 +23,14 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "echo \"\nRunning build script of training/gatsby-starter-default!\n\" && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "predeploy": "yarn run build",
+    "predeploy": "gatsby build",
     "deploy": "gh-pages -d build"
   },
   "repository": {

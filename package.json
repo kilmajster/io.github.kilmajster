@@ -15,8 +15,6 @@
   },
   "scripts": {
     "install:all": "for D in training/*/; do yarn --cwd \"${D}\" install; done",
-    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done",
-    "predeploy:all": "for D in training/*/; do yarn --cwd \"${D}\" predeploy; done",
-    "deploy:all": "for D in training/*/; do yarn --cwd \"${D}\" deploy; done"
+    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done"
   }
 }
