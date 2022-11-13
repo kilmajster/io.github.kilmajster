@@ -1,7 +1,7 @@
 {
   "name": "io.github.kilmajster",
-  "version": "1.0.0",
-  "description": "root project for training stuff",
+  "version": "0.0.1",
+  "description": "Root project for training stuff",
   "main": "index.js",
   "repository": "https://github.com/kilmajster/io.github.kilmajster.git",
   "author": "kilmajster",
@@ -10,11 +10,8 @@
   "workspaces": [
     "training/*"
   ],
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  },
   "scripts": {
-    "install:all": "for D in training/*/; do yarn --cwd \"${D}\" install; done",
-    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done"
+    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done",
+    "install:all": "for D in training/*/; do yarn --cwd \"${D}\" install; done"
   }
 }

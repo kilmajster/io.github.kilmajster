@@ -1,0 +1,3 @@
+[submodule "training/gatsby-starter-hello-world"]
+	path = training/gatsby-starter-hello-world
+	url = https://github.com/kilmajster/training-gatsby-starter-hello-world.git
