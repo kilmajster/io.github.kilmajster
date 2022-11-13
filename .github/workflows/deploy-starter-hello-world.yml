@@ -18,9 +18,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: yarn --cwd training/gatsby-starter-hello-world install
-      - run: yarn --cwd training/gatsby-starter-hello-world build
+      - run: cd training/gatsby-starter-hello-world
       - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npx gh-pages -d training/gatsby-starter-hello-world/public -u "github-actions-bot <support+actions@github.com>"
+      - run: yarn install
+      - run: yarn deploy
