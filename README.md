@@ -1,4 +1,5 @@
 # JS training stuff
+[![main](https://github.com/kilmajster/io.github.kilmajster/actions/workflows/main.yml/badge.svg)](https://github.com/kilmajster/io.github.kilmajster/actions/workflows/main.yml)
 
 Structure:
 - [training/gatsby-starter-default](training/gatsby-starter-default)
