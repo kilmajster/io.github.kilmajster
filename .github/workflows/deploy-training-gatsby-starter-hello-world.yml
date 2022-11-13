@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Deploy training/gatsby-starter-hello-world to GH pages
 
 on:
   workflow_dispatch:
@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install training/gatsby-starter-hello-world
+        run: yarn --cwd training/gatsby-starter-hello-world install
       - name: Build training/gatsby-starter-hello-world
         run: yarn --cwd training/gatsby-starter-hello-world build
       - name: Deploy training/gatsby-starter-hello-world
