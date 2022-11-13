@@ -14,8 +14,7 @@
     "gh-pages-deploy": "^0.5.1"
   },
   "scripts": {
-    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done",
-    "asdasdasd" : "yarn --cwd training/gatsby-starter-default build",
-    "build-all-test" : "yarn --cwd training/gatsby-starter-default build && yarn --cwd training/gatsby-starter-hello-world build && yarn --cwd training/gatsby-starter-portfolio-cara"
+    "install:all": "for D in training/*/; do yarn --cwd \"${D}\" install; done",
+    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done"
   }
 }
