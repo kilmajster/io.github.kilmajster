@@ -20,9 +20,8 @@ jobs:
           node-version: 18
       - name: Build training/gatsby-starter-hello-world
         run: yarn --cwd training/gatsby-starter-hello-world
-
-  - name: Deploy training/gatsby-starter-hello-world
-    uses: peaceiris/actions-gh-pages@v3
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./training/gatsby-starter-hello-wordl/public
+      - name: Deploy training/gatsby-starter-hello-world
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./training/gatsby-starter-hello-wordl/public
