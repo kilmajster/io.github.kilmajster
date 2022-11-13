@@ -16,7 +16,3 @@ jobs:
           node-version: 18
       - run: yarn install:all
       - run: yarn build:all
-      - run: |
-          git config --global user.email "ci-bot@github.com"
-          git config --global user.name "ci-bot"
-          yarn deploy:all
