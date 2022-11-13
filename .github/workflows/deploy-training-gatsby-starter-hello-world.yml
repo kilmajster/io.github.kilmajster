@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 18
       - name: Build training/gatsby-starter-hello-world
-        run: yarn --cwd training/gatsby-starter-hello-world
+        run: yarn --cwd training/gatsby-starter-hello-world build
       - name: Deploy training/gatsby-starter-hello-world
         uses: peaceiris/actions-gh-pages@v3
         with:
