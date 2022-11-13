@@ -11,8 +11,8 @@
     "training/*"
   ],
   "scripts": {
-    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done",
     "install:all": "for D in training/*/; do yarn --cwd \"${D}\" install; done",
+    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done",
     "deploy:all": "for D in training/*/; do yarn --cwd \"${D}\" gh-pages -d public; done"
   },
   "devDependencies": {

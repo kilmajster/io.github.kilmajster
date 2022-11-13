@@ -16,3 +16,4 @@ jobs:
           node-version: 18
       - run: yarn install:all
       - run: yarn build:all
+      - run: yarn deploy:all
