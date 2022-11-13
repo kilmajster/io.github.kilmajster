@@ -1,0 +1,21 @@
+{
+  "name": "io.github.kilmajster",
+  "version": "1.0.0",
+  "description": "root project for training stuff",
+  "main": "index.js",
+  "repository": "https://github.com/kilmajster/io.github.kilmajster.git",
+  "author": "kilmajster",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "training/*"
+  ],
+  "devDependencies": {
+    "gh-pages-deploy": "^0.5.1"
+  },
+  "scripts": {
+    "build:all": "for D in training/*/; do yarn --cwd \"${D}\" build; done",
+    "asdasdasd" : "yarn --cwd training/gatsby-starter-default build",
+    "build-all-test" : "yarn --cwd training/gatsby-starter-default build && yarn --cwd training/gatsby-starter-hello-world build && yarn --cwd training/gatsby-starter-portfolio-cara"
+  }
+}
