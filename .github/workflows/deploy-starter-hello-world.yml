@@ -20,8 +20,7 @@ jobs:
           node-version: 18
       - run: yarn --cwd training/gatsby-starter-hello-world install
       - run: yarn --cwd training/gatsby-starter-hello-world build
-      - run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -d training/gatsby-starter-hello-world/public -u "github-actions-bot <support+actions@github.com>"
+      - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npx gh-pages -d training/gatsby-starter-hello-world/public -u "github-actions-bot <support+actions@github.com>"
